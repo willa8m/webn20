@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="header">
+            RoboChat
+        </h1>
+
+        <form class="register-form" id="register-form">
+            <div class="container">
+                <label for="login" class="register-form-label">Login</label>
+                <input type="text" id="login" name="login" class="register-form-input" placeholder="Login">
+
+                <label for="password" class="register-form-label">Password</label>
+                <input type="text" id="password" name="password" class="register-form-input" placeholder="Password">
+
+                <label for="passwordRepeat" class="register-form-label">Repeat password</label>
+                <input type="text" id="passwordRepeat" name="passwordRepeat" class="register-form-input"
+                    placeholder="Repeat password">
+
+                <button type="submit" class="register-form-button">Register</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
